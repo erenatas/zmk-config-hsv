@@ -308,7 +308,7 @@
 &mo MOUSE  &kp A         &lh_pht LSFT S &lt SYMB D   &lt NAV F  &lt MOUSE G /*|*/ &kp H     &kp J        &kp K        &rh_pht LSFT L &kp SEMI &lt MOUSE SQT
 &kp LSHFT  &mltp MEDIA Z &kp X          &kp C        &kp V      &kp B       /*|*/ &kp N     &kp M        &kp COMMA    &kp DOT        &kp FSLH &kp RET
                                                      &mkp LCLK              /*|*/           &mkp RCLK
-                         &kp LGUI   &mt LALT K_CMENU &kp LCTRL  &none       /*|*/ &none     &kp SPACE    &lt NAV      &mo FN
+                         &kp LGUI   &mt LALT K_CMENU &kp LCTRL  &none       /*|*/ &none     &kp SPACE    &mo NAV      &mo FN
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
       };
