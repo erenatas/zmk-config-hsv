@@ -29,11 +29,11 @@
   //                                |  36 |   |  37 |
   //              |  38 |  39 |  40 |  41 |   |  42 |  43 |  44  |  45 |
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS FSLH BSLH N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
-    timeout = <3>;
-    break-on-mod; /* stop caps_word when pressing a modifier */
-};
+// &caps_word {
+//     continue-list = <UNDERSCORE MINUS FSLH BSLH N0 N1 N2 N3 N4 N5 N6 N7 N8 N9>;
+//     timeout = <3>;
+//     break-on-mod; /* stop caps_word when pressing a modifier */
+// };
 
 / {
     /* assign `input-listener` to only central device */
@@ -190,13 +190,13 @@
         };
 
         // Usage example: &lt_cw NAV 0
-        lt_cw: layer_tap_caps_word {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&caps_word>;
-        };
+        // lt_cw: layer_tap_caps_word {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     #binding-cells = <2>;
+        //     tapping-term-ms = <200>;
+        //     flavor = "tap-preferred";
+        //     bindings = <&mo>, <&caps_word>;
+        // };
 
         lt_mk: layer_tap_mo_kp {
             compatible = "zmk,behavior-hold-tap";
@@ -308,7 +308,7 @@
 &mo MOUSE  &kp A         &lh_pht LSFT S &lt SYMB D   &lt NAV F  &lt MOUSE G /*|*/ &kp H     &kp J        &kp K        &rh_pht LSFT L &kp SEMI &lt MOUSE SQT
 &kp LSHFT  &mltp MEDIA Z &kp X          &kp C        &kp V      &kp B       /*|*/ &kp N     &kp M        &kp COMMA    &kp DOT        &kp FSLH &kp RET
                                                      &mkp LCLK              /*|*/           &mkp RCLK
-                         &kp LGUI   &mt LALT K_CMENU &kp LCTRL  &none       /*|*/ &none     &kp SPACE    &lt_cw NAV 0 &mo FN
+                         &kp LGUI   &mt LALT K_CMENU &kp LCTRL  &none       /*|*/ &none     &kp SPACE    &lt NAV      &mo FN
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
       };
