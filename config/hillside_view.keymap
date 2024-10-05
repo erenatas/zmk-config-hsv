@@ -221,7 +221,7 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-&kp ESC        &ht N1 Q        &ht N2 W       &ht N3 E         &ht N4 R      &ht N5 T      &ht N6 Y  &ht N7 U       &ht N8 I        &ht N9 O         &ht N0 P           &kp PIPE
+&kp ESC        &ht N1 Q        &ht N2 W       &ht N3 E         &ht N4 R      &ht N5 T      &ht N6 Y  &ht N7 U       &ht N8 I        &ht N9 O         &ht N0 P           &kp BSPC
 &ht GRAVE TAB  &hm LGUI A      &hm LALT S     &hm LSHFT D      &hm LCTRL F   &kp G         &kp H     &hm LCTRL J    &hm RSHFT K     &hm LALT L       &hm LGUI SEMI      &kp SQT
 &sk LSHFT      &mt_sk LCTRL Z  &mt_sk LALT X  &kp C            &kp V         &kp B         &kp N     &kp M          &kp COMMA       &mt_sk RALT DOT  &mt_sk RCTRL FSLH  &sk RSHFT
                                               &trans                                                                &kp C_MUTE
@@ -258,7 +258,7 @@
         sym_layer {
             display-name = "SYMBOLS";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT      &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp PIPE
 &trans  &trans    &trans  &trans    &trans    &trans         &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &trans    &trans  &trans    &trans    &trans         &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                           &kp END                                                  &kp C_PP
