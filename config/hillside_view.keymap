@@ -234,7 +234,7 @@
 &ht GRAVE TAB  &hm LGUI A          &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G         &kp H     &hm LSHFT J    &hm LCTRL K     &hm LALT L       &hm LGUI SEMI      &kp SQT
 &sk LSHFT      &kp Z               &kp X       &kp C        &kp V        &kp B         &kp N     &kp M          &kp COMMA       &mt_sk RALT DOT  &mt_sk RCTRL FSLH  &sk RSHFT
                                                &trans                                                           &kp C_MUTE
-               &lt_qk 3 BACKSPACE  &mkp LCLK   &kp SPACE    &mkp RCLK                            &sk RIGHT_ALT  &lt_qk NUM DEL  &kp RET          &rswp
+               &lt_qk 3 BACKSPACE  &kp SPACE   &mkp LCLK    &mkp RCLK                            &sk RIGHT_ALT  &lt_qk NUM DEL  &kp RET          &rswp
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
