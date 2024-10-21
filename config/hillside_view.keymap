@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -164,6 +165,11 @@
             key-positions = <10 22>;
             timeout-ms = <30>;
         };
+
+        mid_clk {
+            bindings = <&mkp MCLK>;
+            key-positions = <43 37>;
+        };
     };
 
     behaviors {
@@ -224,11 +230,11 @@
         default_layer {
             display-name = "DEFAULT";
             bindings = <
-&kp ESC        &ht N1 Q        &ht N2 W       &ht N3 E         &ht N4 R      &ht N5 T      &ht N6 Y  &ht N7 U       &ht N8 I        &ht N9 O         &ht N0 P           &kp BSPC
-&ht GRAVE TAB  &hm LGUI A      &hm LALT S     &hm LCTRL D      &hm LSHFT F   &kp G         &kp H     &hm LSHFT J    &hm LCTRL K     &hm LALT L       &hm LGUI SEMI      &kp SQT
-&sk LSHFT      &kp Z           &kp X          &kp C            &kp V         &kp B         &kp N     &kp M          &kp COMMA       &mt_sk RALT DOT  &mt_sk RCTRL FSLH  &sk RSHFT
-                                              &trans                                                                &kp C_MUTE
-               &lswp           &kp SPACE      &lt_qk SYM BSPC  &sk LEFT_ALT                          &sk RIGHT_ALT  &lt_qk NUM DEL  &kp RET          &rswp
+&kp ESC        &ht N1 Q            &ht N2 W    &ht N3 E     &ht N4 R     &ht N5 T      &ht N6 Y  &ht N7 U       &ht N8 I        &ht N9 O         &ht N0 P           &kp BSPC
+&ht GRAVE TAB  &hm LGUI A          &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G         &kp H     &hm LSHFT J    &hm LCTRL K     &hm LALT L       &hm LGUI SEMI      &kp SQT
+&sk LSHFT      &kp Z               &kp X       &kp C        &kp V        &kp B         &kp N     &kp M          &kp COMMA       &mt_sk RALT DOT  &mt_sk RCTRL FSLH  &sk RSHFT
+                                               &trans                                                           &kp C_MUTE
+               &lt_qk 3 BACKSPACE  &mkp LCLK   &kp SPACE    &mkp RCLK                            &sk RIGHT_ALT  &lt_qk NUM DEL  &kp RET          &rswp
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
